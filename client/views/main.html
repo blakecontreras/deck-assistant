@@ -1,1 +1,9 @@
-<h3>Hello, world.</h3>
+<h3>MTG Deck Assistant</h3>
+<p>
+  Tell the Deck Assistant your deck's mana requirements and it will set up a mana base for you!
+</p>
+<form class="mana" action="index.html" method="post">
+  <div class="mana-count" ng-repeat="type in mana">
+    <input class="mana-type" type="number" name={{type.color}} ng-model="type.amount">{{type.color}}
+  </div>
+</form>

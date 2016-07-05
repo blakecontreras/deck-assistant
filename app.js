@@ -1,5 +1,6 @@
 var app = angular.module('deck-assistant', [
-  'ui.router'
+  'ui.router',
+  'deck-assistant.main'
 ]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -8,6 +9,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('main', {
     url: '/',
     templateUrl: './client/views/main.html',
-    // controller: 'MainController'
+    controller: 'MainController'
   })
 })
