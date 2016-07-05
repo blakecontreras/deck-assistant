@@ -1,0 +1,36 @@
+{
+  "name": "mtg-data-assistant",
+  "version": "1.0.0",
+  "description": "Build MTG mana bases easily.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakecontreras/deck-assistant.git"
+  },
+  "keywords": [
+    "Magic",
+    "the",
+    "Gathering",
+    "MTG",
+    "deck",
+    "builder",
+    "land",
+    "mana",
+    "draft",
+    "build",
+    "optimize"
+  ],
+  "author": "Blake Contreras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakecontreras/deck-assistant/issues"
+  },
+  "homepage": "https://github.com/blakecontreras/deck-assistant#readme",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1"
+  }
+}
