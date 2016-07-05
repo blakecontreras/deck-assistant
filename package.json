@@ -31,6 +31,8 @@
   "homepage": "https://github.com/blakecontreras/deck-assistant#readme",
   "dependencies": {
     "angular": "^1.5.7",
-    "angular-ui-router": "^0.3.1"
+    "angular-ui-router": "^0.3.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
   }
 }
