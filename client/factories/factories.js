@@ -17,10 +17,14 @@ angular.module('deck-assistant.factories', [])
     })
 
     colors.forEach(function(manaType) {
-      manaType.landAmount = Math.ceil(manaType.amount / (colorCount * 1.5));
-      console.log(manaType.landAmount)
+      manaType.landAmount = Math.ceil(manaType.amount * 0.66);
     })
     return colors;
+  }
+
+  var getColorlessLands = function(manaArray) {
+    // should calculate something smart based on colors in deck.
+    return 'Island';
   }
 
   // var getLandCount = function(deckSize, nonlandCards, colorCount, colors) {
@@ -35,6 +39,7 @@ angular.module('deck-assistant.factories', [])
   // }
 
   return {
-    calculateLimited: calculateLimited
+    calculateLimited: calculateLimited,
+    getColorlessLands: getColorlessLands
   }
 })

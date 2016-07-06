@@ -1,9 +1,18 @@
 <p>
-  Tell the Deck Assistant your deck's mana requirements and it will set up a mana base for you!
+  Tell the Deck Assistant how many cards of each color are in your deck and it will
+  tell you how many basic lands of each type to include!
 </p>
-<form class="mana" action="index.html" method="post">
-  <div class="mana-count" ng-repeat="type in mana">
-    <input class="mana-type" type="number" name={{type.color}} ng-model="type.amount">{{type.color}}
+<div ng-hide="showResults">
+  <form class="mana" ng-submit="getLands()">
+    <div class="mana-count" ng-repeat="type in mana">
+      <input class="mana-type" type="number" name={{type.color}} ng-model="type.amount">{{type.color}}
+    </div>
+    <input type="submit" class="button" value="Calculate!">
+  </form>
+</div>
+<div ng-show="showResults">
+  <div ng-repeat="color in lands">
+    <p>You should include {{color.landAmount}} {{color.landType}} in your deck.</p>
   </div>
-  <input type="submit" class="button" value="Calculate!" ui-sref="results">
-</form>
+  <div class="button" ng-click="getLands()">Reset</div>
+</div>

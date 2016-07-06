@@ -1,7 +1,8 @@
 var app = angular.module('deck-assistant', [
   'ui.router',
   'deck-assistant.main',
-  'deck-assistant.factories'
+  'deck-assistant.factories',
+  'deck-assistant.results'
 ]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -15,6 +16,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('results', {
     url: '/results',
     templateUrl: './client/views/results.html',
-    controller: 'MainController'
+    controller: 'ResultsController'
   })
 })
