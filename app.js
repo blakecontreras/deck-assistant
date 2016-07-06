@@ -12,4 +12,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: './client/views/main.html',
     controller: 'MainController'
   })
+  .state('results', {
+    url: '/results',
+    templateUrl: './client/views/results.html',
+    controller: 'MainController'
+  })
 })

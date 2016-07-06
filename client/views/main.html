@@ -1,4 +1,3 @@
-<h3>MTG Deck Assistant</h3>
 <p>
   Tell the Deck Assistant your deck's mana requirements and it will set up a mana base for you!
 </p>
@@ -6,7 +5,5 @@
   <div class="mana-count" ng-repeat="type in mana">
     <input class="mana-type" type="number" name={{type.color}} ng-model="type.amount">{{type.color}}
   </div>
-  <!-- <input type="submit"> -->
+  <input type="submit" class="button" value="Calculate!" ui-sref="results">
 </form>
-<p>
-  You should include {{lands}} Plains in your deck!
